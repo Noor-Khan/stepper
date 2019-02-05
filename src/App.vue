@@ -1,27 +1,47 @@
 <template>
-    <div id="">
-        <v-container>
-            <step-form />        
-        </v-container>
-    </div>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <step-form></step-form>
+      </v-content>
+    </v-app>
+  </div>
 </template>
 <script>
-    import stepForm from './components/Step.vue'
-	export default{
-	data() {
-		return{
+import stepForm from './views/Stepper.vue'
+  export default {
+    data(){
+      return{
 
-		}
-  },
-  components: {
+      }
+    },
+    components: {
       stepForm
-  },
-  methods:{
-  
+    }
   }
-}
 </script>
-<style scoped>
+
+
+
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
-
-
